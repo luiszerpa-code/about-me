@@ -11,7 +11,7 @@
 
 <header>
     <h1>¡Hola! I'm Luis Zerpa from Mérida, Venezuela</h1>
-    <img src="venezuela.jpg" alt="Venezuela">
+    <img src="venezuela.jpg" alt="Venezuela" alt="family" onclick="openModal('foodven.jpg')">
 </header>
 
 <nav>
@@ -29,21 +29,21 @@
             <td>
                 <h2>Argentina</h2>
                 <p>I lived in Argentina for 9 years where I studied digital marketing. What I love most about Argentina is the diversity they have. There's always something new to do or to know.</p>
-                <img src="argentina.jpg" alt="Argentina">
+                <img src="argentina.jpg" alt="Argentina" alt="family" onclick="openModal('foodarg.jpg')">
             </td>
         </tr>
         <tr id="brazil">
             <td>
                 <h2>Brasil</h2>
                 <p>After Argentina, I moved to Belem do Pará, in the north of Brazil. It's always hot there, like really hot. I loved the food there, but mostly the nature they have – beaches, rivers, and even falls to have fun on.</p>
-                <img src="brazil.jpg" alt="Brazil">
+                <img src="brazil.jpg" alt="Brazil" alt="family" onclick="openModal('foodbra.jpg')">
             </td>
         </tr>
         <tr id="colombia">
             <td>
                 <h2>Colombia</h2>
                 <p>After Brazil, I came to Colombia intending to visit my brother. However, the quarantine started, and here I am almost 3 years later, settled and working hard.</p>
-                <img src="colombia.jpg" alt="Colombia">
+                <img src="colombia.jpg" alt="Colombia" alt="family" onclick="openModal('foodcol.jpg')">
             </td>
         </tr>
         <tr id="job">
@@ -58,11 +58,31 @@
 
 <aside>
     <h2>Meet My Family</h2>
-    <p>I have a lovely family that always support me</p>
-    <img src="family.jpg" alt="family">
-    <img src="family1.jpg" alt="family">
-    <img src="family2.jpg" alt="family">
+    <p>A few pics with my family</p>
+    <img class="image" src="family.jpg" alt="family" onclick="openModal('family.jpg')">
+    <img class="image" src="family1.jpg" alt="family" onclick="openModal('family1.jpg')">
+    <img class="image" src="family2.jpg" alt="family" onclick="openModal('family2.jpg')">
+
 </aside>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(imgSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImg");
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+}
+
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+</script>
 
 <footer>
     <div class="social-icons">
