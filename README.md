@@ -1,7 +1,7 @@
 # Lets get started with this challenge
 
-about-me
+My life journey
 
-En el siguiente proyecto voy a contarles un poco de quien soy.
+On the next project I will tell yoou a little bit about me.
 
 Atte: Luis Zerpa
