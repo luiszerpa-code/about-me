@@ -10,9 +10,51 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width: 767px) {}
+/* @media screen and (max-width: 767px) {}
 @media screen and (min-width: 768px) and (max-width: 1023px){}
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {} */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
+
+    aside {
+        width: 150px;
+        padding: 10px;
+    }
+
+    aside h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    aside {
+        width: 100px;
+        padding: 5px;
+    }
+
+    aside h2 {
+        font-size: 16px;
+    }
+}
 
 header {
     background-color: #f2f2f2;
@@ -28,12 +70,17 @@ header h1 {
 }
 
 img {
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 
 aside img {
     width: 100%;
+    height: auto;
+}
+
+div img {
+    width: 40%;
     height: auto;
 }
 
@@ -93,10 +140,10 @@ tr td {
 
 aside {
     position: fixed;
-    top: 38px;
-    right: 0px;
-    width: 15%;
-    height: 100%;
+    top: 0px; 
+    bottom: 0px;
+    right: 20px;
+    width: 200px;
     background-color: #f2f2f2;
     padding: 20px;
 }
@@ -105,17 +152,6 @@ aside h2 {
     color: #333;
     font-size: 20px;
     margin-bottom: 10px;
-}
-
-.image img {
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.image img:hover {
-    transform: scale(1.1);
 }
 
 .modal {
@@ -134,7 +170,7 @@ aside h2 {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
+    max-width: 60%;
     max-height: 80%;
 }
 
