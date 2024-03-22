@@ -65,7 +65,13 @@ header {
 
 header h1 {
     color: #333;
-    font-size: 28px;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+header h2 {
+    color: #333;
+    font-size: 18px;
     margin: 5px 0;
 }
 
