@@ -144,6 +144,47 @@ tr td {
     padding: 20px;
 }
 
+button {
+    --timing: linear(0, 0.3, 0.75, 1);
+  
+    padding: 1.5rem 10rem;
+    background: none;
+    color: #333;
+    font-size: xx-large;
+  
+    border-image-source: conic-gradient(from var(--a), #6CACE4, #ffffff, #6CACE4);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+  
+    animation: move 1s infinite var(--timing);
+
+    box-shadow: 5px 5px 0 #0006;
+
+  &:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+  }
+  }
+  
+  @keyframes move {
+    from { --a: 0deg; }
+    to { --a: 360deg; }
+  }
+  
+  @property --a {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+
+  .braborder {
+    border-image-source: conic-gradient(from var(--a), #009739, #FEDD00);
+  }
+
+  .colborder {
+    border-image-source: conic-gradient(from var(--a), #003087, #FFCD00, #C8102E);
+  }
+
 aside {
     position: fixed;
     top: 0px; 
